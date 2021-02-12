@@ -1,4 +1,4 @@
-# simple-conversion-OH-data.sh
+# simple-unzip-csvify-OH-data.sh
 # note: do NOT use gzip frivilously. can very easily overwrite data, make files 0 KB, etc.
 # more gunzip: https://www.lifewire.com/example-uses-of-the-gunzip-command-4081346
 
