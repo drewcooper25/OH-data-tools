@@ -2,13 +2,11 @@
 # note: do NOT use gzip frivilously. can very easily overwrite data, make files 0 KB, etc.
 # more gunzip: https://www.lifewire.com/example-uses-of-the-gunzip-command-4081346
 
-ls -d /Users/user/Desktop/OH/MyProjectData/20104403/direct-sharing-31/ | while read dir; do
+ls -d /Users/user/Desktop/OH/MyProjectData/20104403/direct-sharing-31 | while read dir; do
   echo "Starting participant $dir"
 
   # type = entries profile treatments devicestatus
-  for type in entries; do #split devicestatus...
-
-    #cd $dir/next_participant_folder
+  for type in entire profile treatments devicestatus; do #split devicestatus...
 
     # convert from zip to json
     cd $dir
@@ -17,7 +15,7 @@ ls -d /Users/user/Desktop/OH/MyProjectData/20104403/direct-sharing-31/ | while r
       echo "Extracted ${dir}${file}; splitting it..."
     done
 
-      # convert from json into csv
+    # convert from json into csv
     cd ${dir}
       echo "Creating CSV files..."
     ls ${type}*.json | while read file; do
