@@ -2,6 +2,11 @@
 # note: do NOT use gzip frivilously. can very easily overwrite data, make files 0 KB, etc.
 # more gunzip: https://www.lifewire.com/example-uses-of-the-gunzip-command-4081346
 
+# From the Terminal...
+# 1. cd into containing folder
+# 2. Run chmod -x simple-unzip-csvify-OH-data.sh (initializes script; optional)
+# 3. Run bash simple-unzip-csvify-OH-data.sh
+
 ls -d /Users/user/Desktop/OH/MyProjectData/20104403/direct-sharing-31 | while read dir; do
   echo "Starting participant $dir"
 
