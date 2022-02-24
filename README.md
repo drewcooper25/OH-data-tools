@@ -50,14 +50,23 @@ $ pip install open-humans-api
 # to upgrade later, use the following command:
 $ pip install open-humans-api --upgrade
 ```
-5. Success! At this stage, unless you are downloading data directly from Open Humans, move on to CONVERTING DATA.
-6. Navigate to your desktop: ```$ cd ~/Desktop```.
-7. Create a directory for your data: ```$ mkdir MyProjectData```.
-8. In your web browser, navigate to Open Humans, login using the OPEN credentials (see #open-humans-direct-access for more information), then navigate to the upper right dropdown menu “My Account” and click “Manage Projects”; under “Your OAuth2.0 Projects”, click “OPEN” listed under “Project Names”.
-9. Refresh the Master Access Token (see #access-oh-data-and-metadata) and enter it into the following command to download ALL of your Open Humans data:
-```$ ohproj-download -T <MASTER_ACCESS_TOKEN> -d MyProjectData```
+5. Success! At this stage, unless you are downloading data directly from Open Humans, move on to [CONVERTING DATA](#converting-data).
+6. Navigate to your desktop and create a directory for your data:
+```
+$ cd ~/Desktop
+$ mkdir MyProjectData
+```
+7. In your web browser, navigate to Open Humans, login using the OPEN credentials (see [OPEN HUMANS DIRECT ACCESS](#open-humans-direct-access) for more information), then navigate to the upper right dropdown menu “My Account” and click “Manage Projects”; under “Your OAuth2.0 Projects”, click “OPEN” listed under “Project Names”.
+8. Refresh the Master Access Token (see [ACCESS OH DATA AND METADATA](#access-oh-data-and-metadata)) and enter it into the following command to download ALL of your Open Humans data:
+```
+$ ohproj-download -T <MASTER_ACCESS_TOKEN> -d MyProjectData
+```
 * **Note**: Downloading all data at once is NOT recommended for initial troubleshooting. [Tips for Pulling Data from Open Humans Projects](https://github.com/OpenHumans/open-humans/wiki/Tips-for-Pulling-Data-from-Open-Humans-Projects) provides multiple different commands for accessing and working with your Open Humans data.
-Congratulations! — You have now downloaded your Open Humans Data, which you will find as JSON files compressed to .gz zip files… For more options, run ```ohproj-download --help``` or visit the Open Humans GitHub page for more information.
+Congratulations! — You have now downloaded your Open Humans Data, which you will find as JSON files compressed to .gz zip files… For more options, run
+```
+$ ohproj-download --help
+```
+or visit the Open Humans GitHub page for more information.
 
 ***
  
@@ -69,13 +78,13 @@ $ npm install -g complex-json2csv
 $ npm install -g json
 # use of sudo may be necessary depending on system security, but be careful and absolutely certain of what commands you're running and in which directory they are run in
 ```
-Dana Lewis’ [JSON repo](https://github.com/danamlewis/json) has more information, as does [npmjs](https://www.npmjs.com/package/complex-json2csv).
 2. Following successful installation, you can either clone the [data tools repository](https://github.com/danamlewis/OpenHumansDataTools) or download them as a zip file. Tools will be found within the containing folder ```~/OpenHumansDataTools/bin``` and can be run using:
 ```
 $ bash <SCRIPT_NAME.sh>
 ````
 The script ```simple-unzip-csvify-OH-data.sh``` can be run in the same way from this repository.
-3. Congratulations! You have successfully converted your files to csv formatting.
+Congratulations! You have successfully converted your files to csv formatting.
+Dana Lewis’ [JSON repo](https://github.com/danamlewis/json) has more information, as does [npmjs](https://www.npmjs.com/package/complex-json2csv).
 
 ***
 
