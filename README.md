@@ -62,11 +62,12 @@ $ mkdir MyProjectData
 $ ohproj-download -T <MASTER_ACCESS_TOKEN> -d MyProjectData
 ```
 * **Note**: Downloading all data at once is NOT recommended for initial troubleshooting. [Tips for Pulling Data from Open Humans Projects](https://github.com/OpenHumans/open-humans/wiki/Tips-for-Pulling-Data-from-Open-Humans-Projects) provides multiple different commands for accessing and working with your Open Humans data.
+
 Congratulations! — You have now downloaded your Open Humans Data, which you will find as JSON files compressed to .gz zip files… For more options, run
 ```
 $ ohproj-download --help
 ```
-or visit the Open Humans GitHub page for more information.
+or visit the [Open Humans GitHub page](https://github.com/OpenHumans) for more information.
 
 ***
  
@@ -83,7 +84,9 @@ $ npm install -g json
 $ bash <SCRIPT_NAME.sh>
 ````
 The script ```simple-unzip-csvify-OH-data.sh``` can be run in the same way from this repository.
-Congratulations! You have successfully converted your files to csv formatting.
+
+Congratulations! — You have successfully converted your files to csv format.
+
 Dana Lewis’ [JSON repo](https://github.com/danamlewis/json) has more information, as does [npmjs](https://www.npmjs.com/package/complex-json2csv).
 
 ***
@@ -102,6 +105,8 @@ Long-term storage will be managed by the responsible data archiver Dr. Shane O�
 
 ### OPEN HUMANS DIRECT ACCESS:
 Those who have access to the OPEN on Open Humans profile have a slightly different protocol to follow. The credentials for OPEN on OH are stored in Bitwarden. Accessing these credentials requires logging into your Bitwarden Vault with your email address and master password. Within “My Vault”, you will see an item titled “Open Humans Account”, which contains the login credentials. Enter this information into the login field on the Open Humans website to login to OPEN on OH. Access to OPEN on OH is currently granted to Shane, Katarina, Hanne, Drew and Tebbe.
+
+***
  
 ### ACCESS OH DATA AND METADATA:
 1. In the upper righthand corner dropdown, click on “My Projects”
