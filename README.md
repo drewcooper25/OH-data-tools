@@ -61,7 +61,7 @@ $ mkdir MyProjectData
 ```
 $ ohproj-download -T <MASTER_ACCESS_TOKEN> -d MyProjectData
 ```
-* **Note**: Downloading all data at once is NOT recommended for initial troubleshooting. [Tips for Pulling Data from Open Humans Projects](https://github.com/OpenHumans/open-humans/wiki/Tips-for-Pulling-Data-from-Open-Humans-Projects) provides multiple different commands for accessing and working with your Open Humans data.
+* **Note**: Downloading all data at once is NOT recommended for initial troubleshooting. [Tips for Pulling Data from Open Humans Projects](https://github.com/OpenHumans/open-humans/wiki/Tips-for-Pulling-Data-from-Open-Humans-Projects) provides multiple different commands for accessing and working with your Open Humans data. For those interested in even more options for working with their data, please refer to documentation on the [Open Humans API](https://github.com/OpenHumans/open-humans-api) specific to using the ```oh-proj-download``` function.
 
 Congratulations! — You have now downloaded your Open Humans Data, which you will find as JSON files compressed to .gz zip files… For more options, run
 ```
